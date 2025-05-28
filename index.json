@@ -1,0 +1,47 @@
+{
+  "docs/Calculator.Domain.Calculator.html": {
+    "href": "docs/Calculator.Domain.Calculator.html",
+    "title": "Class Calculator | Calculator Domain",
+    "keywords": "Class Calculator Namespace Calculator.Domain Assembly Calculator.Domain.dll public class Calculator Inheritance object Calculator Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Add(int, int) public int Add(int x, int y) Parameters x int y int Returns int Divide(int, int) public int Divide(int x, int y) Parameters x int y int Returns int Multiply(int, int) public int Multiply(int x, int y) Parameters x int y int Returns int Subtract(int, int) public int Subtract(int x, int y) Parameters x int y int Returns int"
+  },
+  "docs/Calculator.Domain.Tests.Features.ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature.html": {
+    "href": "docs/Calculator.Domain.Tests.Features.ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature.html",
+    "title": "Class ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature | Calculator Domain",
+    "keywords": "Class ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature Namespace Calculator.Domain.Tests.Features Assembly Calculator.Domain.Tests.dll [TestFixture] [Description(\"Como usuario quiero hacer operaciones aritmeticas para calcular resultados\")] public class ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature Inheritance object ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods FeatureSetup() [OneTimeSetUp] public virtual void FeatureSetup() FeatureTearDown() [OneTimeTearDown] public virtual void FeatureTearDown() ScenarioCleanup() public void ScenarioCleanup() ScenarioInitialize(ScenarioInfo) public void ScenarioInitialize(ScenarioInfo scenarioInfo) Parameters scenarioInfo ScenarioInfo ScenarioStart() public void ScenarioStart() TestInitialize() [SetUp] public void TestInitialize() TestTearDown() [TearDown] public void TestTearDown() UsuarioDivideDosNumerosYElResultadoEsCorrecto() [Test] [Description(\"Usuario divide dos numeros y el resultado es correcto\")] public void UsuarioDivideDosNumerosYElResultadoEsCorrecto() UsuarioMultiplicaDosNumerosYElResultadoEsCorrecto() [Test] [Description(\"Usuario multiplica dos numeros y el resultado es correcto\")] public void UsuarioMultiplicaDosNumerosYElResultadoEsCorrecto() UsuarioRestaDosNumerosYElResultadoEsCorrecto() [Test] [Description(\"Usuario resta dos numeros y el resultado es correcto\")] public void UsuarioRestaDosNumerosYElResultadoEsCorrecto() UsuarioSumaDosNumerosYElResultadoEsCorrecto() [Test] [Description(\"Usuario suma dos numeros y el resultado es correcto\")] public void UsuarioSumaDosNumerosYElResultadoEsCorrecto()"
+  },
+  "docs/Calculator.Domain.Tests.Features.html": {
+    "href": "docs/Calculator.Domain.Tests.Features.html",
+    "title": "Namespace Calculator.Domain.Tests.Features | Calculator Domain",
+    "keywords": "Namespace Calculator.Domain.Tests.Features Classes ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature"
+  },
+  "docs/Calculator.Domain.Tests.Steps.CalculatorTests.html": {
+    "href": "docs/Calculator.Domain.Tests.Steps.CalculatorTests.html",
+    "title": "Class CalculatorTests | Calculator Domain",
+    "keywords": "Class CalculatorTests Namespace Calculator.Domain.Tests.Steps Assembly Calculator.Domain.Tests.dll [Binding] public sealed class CalculatorTests Inheritance object CalculatorTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Constructors CalculatorTests(ScenarioContext) public CalculatorTests(ScenarioContext scenarioContext) Parameters scenarioContext ScenarioContext Properties Calculadora public Calculator Calculadora { get; set; } Property Value Calculator Methods CuandoDivido() [When(\"divido\")] public void CuandoDivido() CuandoMultiplico() [When(\"multiplico\")] public void CuandoMultiplico() CuandoResto() [When(\"resto\")] public void CuandoResto() CuandoSumo() [When(\"sumo\")] public void CuandoSumo() DadoElNumero(int) [Given(\"El numero (.*)\")] public void DadoElNumero(int operando01) Parameters operando01 int EntoncesElResultadoDeberiaSer(int) [Then(\"el resultado es (.*)\")] public void EntoncesElResultadoDeberiaSer(int resultado) Parameters resultado int yElNumero(int) [Given(\"el numero (.*)\")] public void yElNumero(int operando02) Parameters operando02 int"
+  },
+  "docs/Calculator.Domain.Tests.Steps.html": {
+    "href": "docs/Calculator.Domain.Tests.Steps.html",
+    "title": "Namespace Calculator.Domain.Tests.Steps | Calculator Domain",
+    "keywords": "Namespace Calculator.Domain.Tests.Steps Classes CalculatorTests"
+  },
+  "docs/Calculator.Domain.html": {
+    "href": "docs/Calculator.Domain.html",
+    "title": "Namespace Calculator.Domain | Calculator Domain",
+    "keywords": "Namespace Calculator.Domain Classes Calculator"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | Calculator Domain",
+    "keywords": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | Calculator Domain",
+    "keywords": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the Bank Domain homepage. | Calculator Domain",
+    "keywords": "This is the Bank Domain homepage. Cobertura Stryker Models, Class Tests"
+  }
+}
