@@ -1,47 +1,57 @@
-name: Publicar Doc con docfx 
+name: Publicar Doc con docfx
 
 on:
-  workflow_run:
-    workflows: ["Publish BDD Living Documentation"] 
-    types:
-      - completed
+  push:
+    branches:
+      - main  # O master, o la rama principal de tu proyecto
+      # - 'releases/**' # Podrías añadir otras ramas o patrones
 
 jobs:
-  docfx_and_publish: 
+  docfx_and_publish:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # Ya no necesitamos esta condición porque el trigger no es workflow_run
+    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        ref: ${{ github.event.workflow_run.head_sha }}
+      # Ya no necesitamos esta referencia porque el checkout será del commit del push
+      # o del ref especificado en el workflow_dispatch
+      # with:
+      #   ref: ${{ github.event.workflow_run.head_sha }}
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '8.0.x' # Asegúrate que sea la versión que necesitas para docfx
 
     - name: Install DocFx globally
-      run: dotnet tool update -g docfx --version 2.75.2
+      run: dotnet tool update -g docfx --version 2.75.2 # O la versión que prefieras
 
     - name: Add .NET tools to PATH (if not already picked up)
       run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
     - name: Generate metadata for DocFx
+      # Asegúrate que la ruta 'Bank/docfx.json' es correcta
       run: docfx metadata Calculator/docfx.json
 
     - name: Build DocFx Site
+      # Asegúrate que la ruta 'Bank/docfx.json' es correcta
       run: docfx build Calculator/docfx.json
 
     - name: Publish DocFx site to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: Calculator/_site
+        publish_dir: Calculator/_site # Asegúrate que esta es la carpeta de salida de docfx
         publish_branch: gh-pages
-        keep_files: true # Mantiene el informe de cobertura que ya está en gh-pages/cobertura/
+        # keep_files: true # Si el informe de cobertura se publica en la misma rama gh-pages
+                         # y quieres mantenerlo, deja esto en true.
+                         # Si esta acción es la ÚNICA que publica en gh-pages/Bank/_site,
+                         # podrías considerar false para tener un directorio limpio cada vez,
+                         # pero dado tu comentario original, parece que true es lo correcto.
+        keep_files: true
         allow_empty_commit: false
-        force_orphan: false 
+        force_orphan: false
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         enable_jekyll: false

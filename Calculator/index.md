@@ -2,7 +2,7 @@
 _layout: landing
 ---
 
-# This is the **Bank Domain** homepage.
+# This is the **Calculator Domain** homepage.
 
 ## [Cobertura](cobertura/index.html)
 
