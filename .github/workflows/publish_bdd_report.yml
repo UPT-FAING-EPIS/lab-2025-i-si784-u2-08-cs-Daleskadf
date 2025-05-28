@@ -28,7 +28,7 @@ jobs:
         dotnet-version: '6.0.x'
 
     - name: Restore dependencies for Calculator
-      run: dotnet restore Calculator.sln
+      run: dotnet restore Calculator/Calculator.sln
       working-directory: Calculator 
 
     - name: Build the Calculator project
