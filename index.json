@@ -42,6 +42,6 @@
   "index.html": {
     "href": "index.html",
     "title": "This is the Bank Domain homepage. | Calculator Domain",
-    "keywords": "This is the Bank Domain homepage. Cobertura Stryker Models, Class Tests"
+    "keywords": "This is the Bank Domain homepage. Cobertura BDD Models, Class Tests"
   }
 }
