@@ -32,17 +32,17 @@ jobs:
 
     - name: Generate metadata for DocFx
       # Asegúrate que la ruta 'Bank/docfx.json' es correcta
-      run: docfx metadata Bank/docfx.json
+      run: docfx metadata Calculator/docfx.json
 
     - name: Build DocFx Site
       # Asegúrate que la ruta 'Bank/docfx.json' es correcta
-      run: docfx build Bank/docfx.json
+      run: docfx build Calculator/docfx.json
 
     - name: Publish DocFx site to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: Bank/_site # Asegúrate que esta es la carpeta de salida de docfx
+        publish_dir: Calculator/_site # Asegúrate que esta es la carpeta de salida de docfx
         publish_branch: gh-pages
         # keep_files: true # Si el informe de cobertura se publica en la misma rama gh-pages
                          # y quieres mantenerlo, deja esto en true.
