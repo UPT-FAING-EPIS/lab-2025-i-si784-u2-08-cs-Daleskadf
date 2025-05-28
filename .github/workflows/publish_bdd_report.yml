@@ -3,11 +3,11 @@ name: Publish BDD Living Documentation
 on:
   push:
     branches:
-      - main 
+      - main
   pull_request:
     branches:
-      - main 
-  workflow_dispatch: 
+      - main
+  workflow_dispatch:
 
 jobs:
   build_test_and_publish_bdd:
@@ -15,28 +15,35 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write    
-      id-token: write 
+      pages: write
+      id-token: write
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    # Paso de depuración opcional para ver la estructura de archivos
+    - name: List files after checkout
+      run: ls -R
+
     - name: Set up .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        # Asegúrate que esta versión sea la correcta para tu proyecto
+        # Si usaste NET 6 en el lab, debería ser '6.0.x'
+        # Si usaste NET 8 como en tu imagen, '8.0.x'
+        dotnet-version: '8.0.x' # AJUSTA ESTO SI ES NECESARIO
 
     - name: Restore dependencies for Calculator
-      run: dotnet restore Calculator/Calculator.sln
-      working-directory: Calculator 
+      run: dotnet restore Calculator.sln # CORREGIDO: Solo el nombre del archivo .sln
+      working-directory: Calculator
 
     - name: Build the Calculator project
-      run: dotnet build Calculator/Calculator.sln --configuration Release --no-restore
+      run: dotnet build Calculator.sln --configuration Release --no-restore # CORREGIDO
       working-directory: Calculator
 
     - name: Run tests for Calculator
-      run: dotnet test Calculator.sln --configuration Release --no-build
+      run: dotnet test Calculator.sln --configuration Release --no-build # CORREGIDO
       working-directory: Calculator
 
     - name: Install SpecFlow.Plus.LivingDoc.CLI
@@ -47,52 +54,49 @@ jobs:
 
     - name: Generate BDD Living Documentation
       run: |
-        # Define las rutas basadas en la estructura del proyecto y la configuración
-        # La guía usa net7.0 en el comando, pero los requisitos dicen net6.0.
-        # Tu imagen mostraba net8.0. AJUSTA EL TARGET FRAMEWORK ('net6.0', 'net7.0', 'net8.0')
-        TARGET_FRAMEWORK="net6.0" # CAMBIA ESTO SEGÚN TU PROYECTO (ej. net7.0, net8.0)
-        TEST_PROJECT_PATH="Calculator.Domain.Tests" # Ruta relativa desde working-directory
-        OUTPUT_DIR_RELATIVE="bdd-report" # Directorio para el reporte, relativo al working-directory
+        # AJUSTA EL TARGET_FRAMEWORK a la versión real de tu proyecto
+        # (ej. net6.0, net7.0, net8.0)
+        TARGET_FRAMEWORK="net8.0" # CAMBIA ESTO SEGÚN TU PROYECTO
+        TEST_PROJECT_PATH="Calculator.Domain.Tests"
+        OUTPUT_DIR_RELATIVE="bdd-report"
         HTML_REPORT_NAME="CalculatorBDDReport.html"
 
-        # Rutas completas dentro del working-directory
         TEST_ASSEMBLY_DLL_PATH="$TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/$TEST_PROJECT_PATH.dll"
         TEST_EXECUTION_JSON_PATH="$TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/TestExecution.json"
 
         echo "Generating LivingDoc..."
+        echo "Working Directory (for livingdoc): $(pwd)"
         echo "Test Assembly: $TEST_ASSEMBLY_DLL_PATH"
         echo "TestExecution.json: $TEST_EXECUTION_JSON_PATH"
         echo "Output HTML: $OUTPUT_DIR_RELATIVE/$HTML_REPORT_NAME"
 
-        # Crear el directorio de salida si no existe
         mkdir -p "$OUTPUT_DIR_RELATIVE"
 
-        # Verificar si los archivos existen antes de ejecutar livingdoc
         if [ ! -f "$TEST_ASSEMBLY_DLL_PATH" ]; then
-            echo "Error: Test assembly DLL not found at $TEST_ASSEMBLY_DLL_PATH"
-            echo "Listing contents of $TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/:"
+            echo "Error: Test assembly DLL not found at $PWD/$TEST_ASSEMBLY_DLL_PATH"
+            echo "Listing contents of $PWD/$TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/:"
             ls -R "$TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/"
             exit 1
         fi
 
         if [ ! -f "$TEST_EXECUTION_JSON_PATH" ]; then
-            echo "Error: TestExecution.json not found at $TEST_EXECUTION_JSON_PATH"
-            echo "Listing contents of $TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/:"
+            echo "Error: TestExecution.json not found at $PWD/$TEST_EXECUTION_JSON_PATH"
+            echo "Listing contents of $PWD/$TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/:"
             ls -R "$TEST_PROJECT_PATH/bin/Release/$TARGET_FRAMEWORK/"
             exit 1
         fi
 
         livingdoc test-assembly "$TEST_ASSEMBLY_DLL_PATH" -t "$TEST_EXECUTION_JSON_PATH" -o "$OUTPUT_DIR_RELATIVE/$HTML_REPORT_NAME"
-      working-directory: Calculator 
+      working-directory: Calculator
 
     - name: Publish BDD report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./Calculator/bdd-report 
+        publish_dir: ./Calculator/bdd-report
         publish_branch: gh-pages
-        destination_dir: bdd 
-        keep_files: true 
+        destination_dir: bdd
+        keep_files: true
         allow_empty_commit: false
         force_orphan: false
         enable_jekyll: false
