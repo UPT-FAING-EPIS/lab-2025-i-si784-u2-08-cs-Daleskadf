@@ -25,14 +25,14 @@ jobs:
     - name: Set up .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '6.0.x'
+        dotnet-version: '8.0.x'
 
     - name: Restore dependencies for Calculator
       run: dotnet restore Calculator/Calculator.sln
       working-directory: Calculator 
 
     - name: Build the Calculator project
-      run: dotnet build Calculator.sln --configuration Release --no-restore
+      run: dotnet build Calculator/Calculator.sln --configuration Release --no-restore
       working-directory: Calculator
 
     - name: Run tests for Calculator
