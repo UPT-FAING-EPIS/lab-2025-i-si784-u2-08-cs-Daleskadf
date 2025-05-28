@@ -6,7 +6,7 @@ _layout: landing
 
 ## [Cobertura](cobertura/index.html)
 
-## [BDD](bdd/CalculatorSDDReport.html)
+## [BDD](bdd/CalculatorBDDReport.html)
 
 ## [Models, Class](docs/Calculator.Domain.html)
 
