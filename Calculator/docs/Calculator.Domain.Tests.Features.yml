@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calculator.Domain.Tests.Features
+  commentId: N:Calculator.Domain.Tests.Features
+  id: Calculator.Domain.Tests.Features
+  children:
+  - Calculator.Domain.Tests.Features.ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature
+  langs:
+  - csharp
+  - vb
+  name: Calculator.Domain.Tests.Features
+  nameWithType: Calculator.Domain.Tests.Features
+  fullName: Calculator.Domain.Tests.Features
+  type: Namespace
+  assemblies:
+  - Calculator.Domain.Tests
+references:
+- uid: Calculator.Domain.Tests.Features.ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature
+  commentId: T:Calculator.Domain.Tests.Features.ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature
+  href: Calculator.Domain.Tests.Features.ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature.html
+  name: ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature
+  nameWithType: ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature
+  fullName: Calculator.Domain.Tests.Features.ComoUsuarioQuieroHacerOperacionesAritmeticasParaCalcularResultadosFeature

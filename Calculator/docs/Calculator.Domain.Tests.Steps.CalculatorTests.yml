@@ -1,0 +1,780 @@
+### YamlMime:ManagedReference
+items:
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests
+  commentId: T:Calculator.Domain.Tests.Steps.CalculatorTests
+  id: CalculatorTests
+  parent: Calculator.Domain.Tests.Steps
+  children:
+  - Calculator.Domain.Tests.Steps.CalculatorTests.#ctor(TechTalk.SpecFlow.ScenarioContext)
+  - Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora
+  - Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido
+  - Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico
+  - Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto
+  - Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo
+  - Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero(System.Int32)
+  - Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer(System.Int32)
+  - Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CalculatorTests
+  nameWithType: CalculatorTests
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests
+  type: Class
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: CalculatorTests
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 6
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [Binding]
+
+      public sealed class CalculatorTests
+    content.vb: >-
+      <Binding>
+
+      Public NotInheritable Class CalculatorTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: TechTalk.SpecFlow.BindingAttribute
+    ctor: TechTalk.SpecFlow.BindingAttribute.#ctor
+    arguments: []
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora
+  commentId: P:Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora
+  id: Calculadora
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: Calculadora
+  nameWithType: CalculatorTests.Calculadora
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora
+  type: Property
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: Calculadora
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 10
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: public Calculator Calculadora { get; set; }
+    parameters: []
+    return:
+      type: Calculator.Domain.Calculator
+    content.vb: Public Property Calculadora As Calculator
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora*
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.#ctor(TechTalk.SpecFlow.ScenarioContext)
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.#ctor(TechTalk.SpecFlow.ScenarioContext)
+  id: '#ctor(TechTalk.SpecFlow.ScenarioContext)'
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CalculatorTests(ScenarioContext)
+  nameWithType: CalculatorTests.CalculatorTests(ScenarioContext)
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CalculatorTests(TechTalk.SpecFlow.ScenarioContext)
+  type: Constructor
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: .ctor
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 16
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: public CalculatorTests(ScenarioContext scenarioContext)
+    parameters:
+    - id: scenarioContext
+      type: TechTalk.SpecFlow.ScenarioContext
+    content.vb: Public Sub New(scenarioContext As ScenarioContext)
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.#ctor*
+  nameWithType.vb: CalculatorTests.New(ScenarioContext)
+  fullName.vb: Calculator.Domain.Tests.Steps.CalculatorTests.New(TechTalk.SpecFlow.ScenarioContext)
+  name.vb: New(ScenarioContext)
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero(System.Int32)
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero(System.Int32)
+  id: DadoElNumero(System.Int32)
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: DadoElNumero(int)
+  nameWithType: CalculatorTests.DadoElNumero(int)
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero(int)
+  type: Method
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: DadoElNumero
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 23
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [Given("El numero (.*)")]
+
+      public void DadoElNumero(int operando01)
+    parameters:
+    - id: operando01
+      type: System.Int32
+    content.vb: >-
+      <Given("El numero (.*)")>
+
+      Public Sub DadoElNumero(operando01 As Integer)
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero*
+  attributes:
+  - type: TechTalk.SpecFlow.GivenAttribute
+    ctor: TechTalk.SpecFlow.GivenAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: El numero (.*)
+  nameWithType.vb: CalculatorTests.DadoElNumero(Integer)
+  fullName.vb: Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero(Integer)
+  name.vb: DadoElNumero(Integer)
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero(System.Int32)
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero(System.Int32)
+  id: yElNumero(System.Int32)
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: yElNumero(int)
+  nameWithType: CalculatorTests.yElNumero(int)
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero(int)
+  type: Method
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: yElNumero
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 29
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [Given("el numero (.*)")]
+
+      public void yElNumero(int operando02)
+    parameters:
+    - id: operando02
+      type: System.Int32
+    content.vb: >-
+      <Given("el numero (.*)")>
+
+      Public Sub yElNumero(operando02 As Integer)
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero*
+  attributes:
+  - type: TechTalk.SpecFlow.GivenAttribute
+    ctor: TechTalk.SpecFlow.GivenAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: el numero (.*)
+  nameWithType.vb: CalculatorTests.yElNumero(Integer)
+  fullName.vb: Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero(Integer)
+  name.vb: yElNumero(Integer)
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo
+  id: CuandoSumo
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CuandoSumo()
+  nameWithType: CalculatorTests.CuandoSumo()
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo()
+  type: Method
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: CuandoSumo
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 35
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [When("sumo")]
+
+      public void CuandoSumo()
+    content.vb: >-
+      <When("sumo")>
+
+      Public Sub CuandoSumo()
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo*
+  attributes:
+  - type: TechTalk.SpecFlow.WhenAttribute
+    ctor: TechTalk.SpecFlow.WhenAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: sumo
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto
+  id: CuandoResto
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CuandoResto()
+  nameWithType: CalculatorTests.CuandoResto()
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto()
+  type: Method
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: CuandoResto
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 41
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [When("resto")]
+
+      public void CuandoResto()
+    content.vb: >-
+      <When("resto")>
+
+      Public Sub CuandoResto()
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto*
+  attributes:
+  - type: TechTalk.SpecFlow.WhenAttribute
+    ctor: TechTalk.SpecFlow.WhenAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: resto
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico
+  id: CuandoMultiplico
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CuandoMultiplico()
+  nameWithType: CalculatorTests.CuandoMultiplico()
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico()
+  type: Method
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: CuandoMultiplico
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 47
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [When("multiplico")]
+
+      public void CuandoMultiplico()
+    content.vb: >-
+      <When("multiplico")>
+
+      Public Sub CuandoMultiplico()
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico*
+  attributes:
+  - type: TechTalk.SpecFlow.WhenAttribute
+    ctor: TechTalk.SpecFlow.WhenAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: multiplico
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido
+  id: CuandoDivido
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: CuandoDivido()
+  nameWithType: CalculatorTests.CuandoDivido()
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido()
+  type: Method
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: CuandoDivido
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 53
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [When("divido")]
+
+      public void CuandoDivido()
+    content.vb: >-
+      <When("divido")>
+
+      Public Sub CuandoDivido()
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido*
+  attributes:
+  - type: TechTalk.SpecFlow.WhenAttribute
+    ctor: TechTalk.SpecFlow.WhenAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: divido
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer(System.Int32)
+  commentId: M:Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer(System.Int32)
+  id: EntoncesElResultadoDeberiaSer(System.Int32)
+  parent: Calculator.Domain.Tests.Steps.CalculatorTests
+  langs:
+  - csharp
+  - vb
+  name: EntoncesElResultadoDeberiaSer(int)
+  nameWithType: CalculatorTests.EntoncesElResultadoDeberiaSer(int)
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer(int)
+  type: Method
+  source:
+    remote:
+      path: Calculator/Calculator.Domain.Tests/Steps/CalculatorTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-08-cs-Daleskadf.git
+    id: EntoncesElResultadoDeberiaSer
+    path: Calculator.Domain.Tests/Steps/CalculatorTests.cs
+    startLine: 66
+  assemblies:
+  - Calculator.Domain.Tests
+  namespace: Calculator.Domain.Tests.Steps
+  syntax:
+    content: >-
+      [Then("el resultado es (.*)")]
+
+      public void EntoncesElResultadoDeberiaSer(int resultado)
+    parameters:
+    - id: resultado
+      type: System.Int32
+    content.vb: >-
+      <Then("el resultado es (.*)")>
+
+      Public Sub EntoncesElResultadoDeberiaSer(resultado As Integer)
+  overload: Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer*
+  attributes:
+  - type: TechTalk.SpecFlow.ThenAttribute
+    ctor: TechTalk.SpecFlow.ThenAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: el resultado es (.*)
+  nameWithType.vb: CalculatorTests.EntoncesElResultadoDeberiaSer(Integer)
+  fullName.vb: Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer(Integer)
+  name.vb: EntoncesElResultadoDeberiaSer(Integer)
+references:
+- uid: Calculator.Domain.Tests.Steps
+  commentId: N:Calculator.Domain.Tests.Steps
+  href: Calculator.html
+  name: Calculator.Domain.Tests.Steps
+  nameWithType: Calculator.Domain.Tests.Steps
+  fullName: Calculator.Domain.Tests.Steps
+  spec.csharp:
+  - uid: Calculator
+    name: Calculator
+    href: Calculator.html
+  - name: .
+  - uid: Calculator.Domain
+    name: Domain
+    href: Calculator.Domain.html
+  - name: .
+  - uid: Calculator.Domain.Tests
+    name: Tests
+    href: Calculator.Domain.Tests.html
+  - name: .
+  - uid: Calculator.Domain.Tests.Steps
+    name: Steps
+    href: Calculator.Domain.Tests.Steps.html
+  spec.vb:
+  - uid: Calculator
+    name: Calculator
+    href: Calculator.html
+  - name: .
+  - uid: Calculator.Domain
+    name: Domain
+    href: Calculator.Domain.html
+  - name: .
+  - uid: Calculator.Domain.Tests
+    name: Tests
+    href: Calculator.Domain.Tests.html
+  - name: .
+  - uid: Calculator.Domain.Tests.Steps
+    name: Steps
+    href: Calculator.Domain.Tests.Steps.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_Calculadora
+  name: Calculadora
+  nameWithType: CalculatorTests.Calculadora
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.Calculadora
+- uid: Calculator.Domain.Calculator
+  commentId: T:Calculator.Domain.Calculator
+  parent: Calculator.Domain
+  href: Calculator.Domain.Calculator.html
+  name: Calculator
+  nameWithType: Calculator
+  fullName: Calculator.Domain.Calculator
+- uid: Calculator.Domain
+  commentId: N:Calculator.Domain
+  href: Calculator.html
+  name: Calculator.Domain
+  nameWithType: Calculator.Domain
+  fullName: Calculator.Domain
+  spec.csharp:
+  - uid: Calculator
+    name: Calculator
+    href: Calculator.html
+  - name: .
+  - uid: Calculator.Domain
+    name: Domain
+    href: Calculator.Domain.html
+  spec.vb:
+  - uid: Calculator
+    name: Calculator
+    href: Calculator.html
+  - name: .
+  - uid: Calculator.Domain
+    name: Domain
+    href: Calculator.Domain.html
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.#ctor*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.#ctor
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests__ctor_TechTalk_SpecFlow_ScenarioContext_
+  name: CalculatorTests
+  nameWithType: CalculatorTests.CalculatorTests
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CalculatorTests
+  nameWithType.vb: CalculatorTests.New
+  fullName.vb: Calculator.Domain.Tests.Steps.CalculatorTests.New
+  name.vb: New
+- uid: TechTalk.SpecFlow.ScenarioContext
+  commentId: T:TechTalk.SpecFlow.ScenarioContext
+  parent: TechTalk.SpecFlow
+  isExternal: true
+  href: https://github.com/SpecFlowOSS/SpecFlow/blob/db3878239927cbb4418355bbd5091ae764a80024/TechTalk.SpecFlow/ScenarioContext.cs
+  name: ScenarioContext
+  nameWithType: ScenarioContext
+  fullName: TechTalk.SpecFlow.ScenarioContext
+- uid: TechTalk.SpecFlow
+  commentId: N:TechTalk.SpecFlow
+  isExternal: true
+  name: TechTalk.SpecFlow
+  nameWithType: TechTalk.SpecFlow
+  fullName: TechTalk.SpecFlow
+  spec.csharp:
+  - uid: TechTalk
+    name: TechTalk
+    isExternal: true
+  - name: .
+  - uid: TechTalk.SpecFlow
+    name: SpecFlow
+    isExternal: true
+  spec.vb:
+  - uid: TechTalk
+    name: TechTalk
+    isExternal: true
+  - name: .
+  - uid: TechTalk.SpecFlow
+    name: SpecFlow
+    isExternal: true
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_DadoElNumero_System_Int32_
+  name: DadoElNumero
+  nameWithType: CalculatorTests.DadoElNumero
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.DadoElNumero
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_yElNumero_System_Int32_
+  name: yElNumero
+  nameWithType: CalculatorTests.yElNumero
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.yElNumero
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_CuandoSumo
+  name: CuandoSumo
+  nameWithType: CalculatorTests.CuandoSumo
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoSumo
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_CuandoResto
+  name: CuandoResto
+  nameWithType: CalculatorTests.CuandoResto
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoResto
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_CuandoMultiplico
+  name: CuandoMultiplico
+  nameWithType: CalculatorTests.CuandoMultiplico
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoMultiplico
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_CuandoDivido
+  name: CuandoDivido
+  nameWithType: CalculatorTests.CuandoDivido
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.CuandoDivido
+- uid: Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer*
+  commentId: Overload:Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer
+  href: Calculator.Domain.Tests.Steps.CalculatorTests.html#Calculator_Domain_Tests_Steps_CalculatorTests_EntoncesElResultadoDeberiaSer_System_Int32_
+  name: EntoncesElResultadoDeberiaSer
+  nameWithType: CalculatorTests.EntoncesElResultadoDeberiaSer
+  fullName: Calculator.Domain.Tests.Steps.CalculatorTests.EntoncesElResultadoDeberiaSer
